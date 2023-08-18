@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libstockprediction.a CMakeFiles/stockprediction.dir/src/curl_utils.cpp.o CMakeFiles/stockprediction.dir/src/listing.cpp.o CMakeFiles/stockprediction.dir/src/main.cpp.o CMakeFiles/stockprediction.dir/src/stock.cpp.o CMakeFiles/stockprediction.dir/src/time_utils.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libstockprediction.a

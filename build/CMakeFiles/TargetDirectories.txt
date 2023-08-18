@@ -1,0 +1,4 @@
+/Users/krishna/Desktop/Projects/C++/StockPrediction/build/CMakeFiles/stockprediction.dir
+/Users/krishna/Desktop/Projects/C++/StockPrediction/build/CMakeFiles/test.dir
+/Users/krishna/Desktop/Projects/C++/StockPrediction/build/CMakeFiles/edit_cache.dir
+/Users/krishna/Desktop/Projects/C++/StockPrediction/build/CMakeFiles/rebuild_cache.dir
