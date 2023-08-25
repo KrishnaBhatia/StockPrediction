@@ -42,6 +42,7 @@ class Stock{
 		* @brief stock constructor
 		* @parem date stock date
 		* @parem price price at closing
+		*/
 		Stock(std::string date, double price);
 	
 		/**

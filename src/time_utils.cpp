@@ -19,8 +19,8 @@ std::time_t dateToEpoch(const char *date){
 
 	struct tm time = {0};
 	time.tm_year = std::atoi(year) - 1900;
-	time.tm_month = std::atoi(month) - 1;
-	time.tm_day = std::atoi(day);
+	time.tm_mon = std::atoi(month) - 1;
+	time.tm_mday = std::atoi(day);
 
 	return timegm(&time);
 }
@@ -30,7 +30,7 @@ std::string epochToDate(const std::time_t epoch){
 	std::stringstream osYear;
 	osYear << ptm->tm_year + 1900;
 
-	std::stringstram osMonth;
+	std::stringstream osMonth;
 	if(ptm->tm_mon < 9){
 		osMonth << 0 << ptm->tm_mon + 1;
 	}
@@ -46,6 +46,6 @@ std::string epochToDate(const std::time_t epoch){
 		osDay << ptm->tm_mday;
 	}
 
-	std::String date = osYear.str() + "-" + osMonth.str() + "-" + osDay.str();
+	std::string date = osYear.str() + "-" + osMonth.str() + "-" + osDay.str();
 	return date;
 }

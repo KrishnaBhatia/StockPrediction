@@ -1,9 +1,10 @@
 #include <iostream>
-#include "curl_utils.hpp"
+#include "listing.hpp"
 
 int main(){
 
-	getHistoricalData("TSLA");
+	Listing *tsla = new Listing("TSLA");
+	tsla->getHistoricalData("TSLA");
 	//std::cout<<stockData;
 	return 0;
 }
