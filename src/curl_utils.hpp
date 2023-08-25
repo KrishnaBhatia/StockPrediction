@@ -18,11 +18,4 @@ size_t writeCallback(char *contents, size_t size, size_t nmemb, void *userdata);
 * @parem symbol stock symbol
 **/
 void getHistoricalData(std::string);
-
-/**
-* @breif Get the stock data
-* @parem symbol stock symbol
-* @return stock data for a specified period of time
-**/
-std::string getStockData(std::string symbol);
 #endif
