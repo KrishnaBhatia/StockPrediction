@@ -44,7 +44,7 @@ public:
 	Stock getStock(std::time_t date);
 
 	/**
-	* @brief stock getter by ate
+	* @brief stock getter by date
 	* @parem date stock date
 	* @return stock(date)
 	**/
@@ -61,6 +61,12 @@ public:
 	void clearStocks();
 
 	/**
+	* @brief fill stocks vector
+	* @parem symbol of the stock
+	*/
+	void getHistoricalData(std::string symbol);
+
+	/**
 	* @brief fill stocks vector on a period
 	* @parem period1 begining date (POSIX timestamp)
 	* @parem period2 ending date (POSIX timestamp)
@@ -70,7 +76,7 @@ public:
 	*	annula "1y"
 	* @return string containing historical data
 	**/
-	std::string getHistoricalStocks(std::time_t period1, std::time_t period2, const char *interval);
+	//std::string getHistoricalData(std::time_t period1, std::time_t period2, const char *interval);
 
 	
 	/**
@@ -82,7 +88,7 @@ public:
         *       weekly "1w"
         *       annualy "1y"
         **/
-	void getHistoricalStock(std::time_t period1, std::time_t period2, const char *interval);
+	//void getHistoricalData(std::time_t period1, std::time_t period2, const char *interval);
 
 	/**
         * @brief fill stocks vector on a period
@@ -93,7 +99,7 @@ public:
         *       weekly "1w"
         *       annually "1y"
         **/
-	void getHistoricalStock(const char *period1, const char *period2, const char *interval);
+	//void getHistoricalData(const char *period1, const char *period2, const char *interval);
 
 private:
 
