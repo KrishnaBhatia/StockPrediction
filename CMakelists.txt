@@ -10,5 +10,5 @@ file(GLOB LIB_SOURCES src/*.cpp)
 file(GLOB LIB_HEADERS src/*.hpp)
 add_library(stockprediction ${LIB_SOURCES} ${LIB_HEADERS})
 
-add_executable(test src/main.cpp)
+add_executable(predictor src/main.cpp)
 target_link_libraries(test stockprediction curl)
